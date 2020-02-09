@@ -5,64 +5,71 @@ html, body, #container {
     margin-right: auto;
     letter-spacing: 5px;
     font-size: 25px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     color: black;
     background-color: rgb(245, 207, 192);
 }
 
 #logo {
-    height: 350px;
-    width: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    height: 300px;
     margin: 10px;
     padding: 15px;
     background-color: rgb(252, 191, 184);
-    opacity: 0.55;
-    text-align: center;
-    vertical-align: middle;   
+    opacity: 0.55; 
     letter-spacing: 7px;
     font-size: 60px;
     font-weight: 900;
 }
 
+.links {
+    display: flex;
+}
+
 .box {
-    width: 460px;
-    height: 55%;
     margin: 10px;
     padding: 15px;
     background-color: rgba(202, 167, 164, 0.85);
-    position: relative;
-    display: table-cell;
-}
-
-.box:hover {
-    background-color: rgba(145, 128, 123, 0.301);
-    cursor: pointer;
- }
-
- .text {
-    position: absolute;
-    display: inline;
-    left: 0;
-    width: 100%;
-    top: 50%;
     text-align: center;
     color: rgb(68, 68, 68);
+	text-decoration: none;
 }
- 
+
 img {
-    width: 350px;
-    height: auto;
-    padding: 5px;
+    width: 100%;
 }
 
 /*cursor on img effect*/
-img:hover {
-    background-color: rgba(240, 231, 228, 0.301);
-    cursor: pointer;
- }
+.hover-effect {
+    display: flex;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(129, 101, 101);
+}
+
+.box:hover .hover-effect {
+    opacity: 1;
+}
+
+.text {
+    display: flex;
+    top: 50%;
+    left: 50%;
+    color: white;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 
 #footer {
     clear:both;
     color:black;
 }
-
