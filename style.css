@@ -41,32 +41,25 @@ img {
     width: 100%;
 }
 
-/*cursor on img effect*/
-.hover-effect {
-    display: flex;
-    height: 100%;
-    top: 0;
-    bottom: 0;
+.imgHover {
+    position: absolute;
+    width: 100%;
     left: 0;
-    right: 0;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: rgb(129, 101, 101);
+    transition: opacity 0.2s ease;
 }
 
-.box:hover .hover-effect {
-    opacity: 1;
+.imgHover:hover {
+    opacity: 0;
 }
 
 .text {
-    display: flex;
-    top: 50%;
-    left: 50%;
-    color: white;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.3s;
     text-align: center;
+    color: rgb(68, 68, 68);
+    text-decoration: none;
+    background-color: rgba(177, 132, 128, 0.85);
 }
 
 #footer {
