@@ -11,8 +11,33 @@ html, body, .container {
     background-color: whitesmoke;
 }
 
+.head-img {
+    position: fixed;
+    width: 720px;
+    height: 400px;
+    z-index: 0;
+}
+
+.moveUp {
+    height: 400px;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+    position: relative;
+    z-index: 1;
+}
+
+
 .header {
     padding: 10px;
+    padding-bottom: 10px;
     font-size: 70px;
     font-weight: normal;
     text-align: center;
@@ -39,6 +64,7 @@ html, body, .container {
 	align-items: center;
 	justify-content: center;
     box-shadow: 2px 1px 2px 2px #cecccc;
+    z-index: 999;
 }
 
 ul {
@@ -64,56 +90,44 @@ li a {
 
 li a:hover {
   background-color: rgb(109, 107, 107);
-  height: 45.5px;
-}
-
-.page {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    margin-top: 8px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: whitesmoke;
+  height: 100%;
 }
 
 .left-side {
     left: 10px;
     padding: 20px;
-    padding-left: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-left: 15px;
-    margin-right: auto;
     margin-bottom: 10px;
-    height: 100%;
-    width: 70%;
+    min-height: 100%;
+    width: 75%;
     background-color: white;
     opacity: 0.75;
-    float: left;
     border-right: 1.5px inset rgb(175, 172, 167);
     border-radius: 5px;
     font-size: 15px;
+    justify-content: stretch;
 }
 
 .right-side {
-    right: 10px;
-    height: 100%;
-    width: auto;
+    min-height: 100%;
+    width: 25%;
     margin-right: 15px;
     background-color: white;
     border-radius: 5px;
-    float: left;
+    justify-content: stretch;
 }
 
 img {
-    height: 100px;
+    height: 400px;
     width: auto;
     margin: 15px;
-    margin-left: 30px;
+    margin-bottom: 30px;
 }
 
 .footer {
     margin: 0;
-    overflow: auto;
     background-color: rgb(214, 214, 214);
     opacity: .75;
     display: block;
@@ -140,7 +154,6 @@ a:active {
 }
 
 a:hover {
-    padding: 10px;
     background-color: rgb(109, 107, 107);
     color: black;
 }
