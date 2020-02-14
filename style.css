@@ -42,7 +42,6 @@ img {
 }
 
 .imgHover {
-    position: absolute;
     width: 100%;
     left: 0;
     transition: opacity 0.2s ease;
