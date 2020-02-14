@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="podstrony.css"/>
 <link rel="stylesheet" type="text/css" href="scrollbar.css"/>
 <script src="scrollbar.js"></script>
+<script src="zoom.js"></script>
 </head>
 <body>
 <div class="container">
@@ -27,6 +28,7 @@
   <div class="page">
     <div class="left-side">
       <p id="Mapa" style="font-size: 25px;margin: 20px;">Mapa</p>
+      <p>Przy niektórych miejscach na mapie są dodatkowe opisy.</p>
       <iframe src="https://www.google.com/maps/d/u/0/embed?mid=14obzWDzy3uCiC9mNu1CYCP2Aq0aUkCxE" width="700" height="480"></iframe>
       <hr>
       <p id="Atrakcje" style="font-size: 25px;margin: 20px;">Atrakcje</p>
@@ -73,15 +75,18 @@
       W całym kraju drogi są dość bardzo wątpliwej jakości, a przemieszczanie się bez własnego samochodu jedynie za pomocą marszrutek (które, jak wiadomo, jeżdża jak chcą), stopem lub taxi. Każdy jest potencjalnym taksówkarzem, więc z tym akurat problemu nie ma. Pociągi nie istnieją. Jedyną trasą jest bodajże pociąg relacji Bishkek-Tashkent (jadący 20h przez Kazachstan - jeeej, 4 odprawy celne w środku nocy). Wyjeżdżając z kraju, warto pozbyć się całej gotówki, bo w ciężko znaleźć potem kantor z walutą kirgiską w innych krajach (nawet tak bliskich jak Uzbekistan i Kazachstan).
     </div>
     <div class="right-side">
-      <img src="zdj/kirgistan/karakol1.jpg"> </br>
-      <img src="zdj/kirgistan/karakol2.jpg"> </br>
-      <img src="zdj/kirgistan/bozuchuk1.jpg"> </br>
-      <img src="zdj/kirgistan/bozuchuk1a.jpg"> </br>
-      <img src="zdj/kirgistan/bozuchuk2.jpg"> </br>
-      <img src="zdj/kirgistan/skazka1.jpg"> </br>
-      <img src="zdj/kirgistan/skazka.jpg"> </br>
-      <img src="zdj/kirgistan/cmentarz.jpg"> </br>
-      <img src="zdj/kirgistan/burana.png"> </br>
+      <div id="lb-back">
+        <div id="lb-img"></div>
+      </div>
+      <img src="zdj/kirgistan/karakol1.jpg" class="zoomD"> </br>
+      <img src="zdj/kirgistan/karakol2.jpg" class="zoomD"> </br>
+      <img src="zdj/kirgistan/bozuchuk1.jpg" class="zoomD"> </br>
+      <img src="zdj/kirgistan/bozuchuk1a.jpg" class="zoomD"> </br>
+      <img src="zdj/kirgistan/bozuchuk2.jpg" class="zoomD"> </br>
+      <img src="zdj/kirgistan/skazka1.jpg" class="zoomD"> </br>
+      <img src="zdj/kirgistan/skazka.jpg" class="zoomD"> </br>
+      <img src="zdj/kirgistan/cmentarz.jpg" class="zoomD"> </br>
+      <img src="zdj/kirgistan/burana.png" class="zoomD"> </br>
     </div>
   </div>
   <div class="footer">
