@@ -7,7 +7,12 @@ html, body, #container {
     font-size: 25px;
     font-family: 'Roboto Condensed', sans-serif;
     color: black;
-    background-color: rgb(245, 207, 192);
+    background-color: rgb(255, 240, 235);
+}
+
+.container {
+    display: flex;
+    align-items: center;
 }
 
 #logo {
@@ -17,7 +22,7 @@ html, body, #container {
     height: 300px;
     margin: 10px;
     padding: 15px;
-    background-color: rgb(252, 191, 184);
+    background-color: rgb(221, 156, 153);
     opacity: 0.55; 
     letter-spacing: 7px;
     font-size: 60px;
@@ -31,20 +36,28 @@ html, body, #container {
 .box {
     margin: 10px;
     padding: 15px;
-    background-color: rgba(202, 167, 164, 0.85);
+    background-color: rgb(179, 156, 155, 0.85);
     text-align: center;
     color: rgb(68, 68, 68);
-	text-decoration: none;
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
 }
 
 img {
     width: 100%;
+    display: block;
 }
 
 .imgHover {
     width: 100%;
     left: 0;
     transition: opacity 0.2s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .imgHover:hover {
@@ -54,14 +67,25 @@ img {
 .text {
     width: 100%;
     height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
     transition: background-color 0.3s;
     text-align: center;
-    color: rgb(68, 68, 68);
+    font-size: 40px;
+    color: rgb(217, 217, 217, 0.85);
     text-decoration: none;
-    background-color: rgba(177, 132, 128, 0.85);
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(99, 80, 78);
+    position: absolute;
+}
+
+.box:hover .text {
+    opacity: 1;
 }
 
 #footer {
     clear:both;
-    color:black;
 }
